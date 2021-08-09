@@ -1,6 +1,8 @@
 import React from "https://cdn.skypack.dev/react"
 import ReactDOM from "https://cdn.skypack.dev/react-dom"
 
+
+//This code stores Hello World to a variable or in a list, then renders it using the variable or list.
 let myVar = <p>Hello World but in a variable</p>
 let myList = [
   <p>Hello World but in the first element of a list</p>, 

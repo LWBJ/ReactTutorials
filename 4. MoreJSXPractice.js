@@ -1,6 +1,7 @@
 import React from "https://cdn.skypack.dev/react"
 import ReactDOM from "https://cdn.skypack.dev/react-dom"
 
+//This code shows some of the rules regarding JSX.
 let app = (<div>
     <p>Only one set of outer tags allowed!</p>
     <p>JSX across multiple lines must be enclosed in brackets!</p>
