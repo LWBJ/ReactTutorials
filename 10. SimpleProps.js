@@ -1,6 +1,3 @@
-import React from "https://cdn.skypack.dev/react"
-import ReactDOM from "https://cdn.skypack.dev/react-dom"
-
 //This code shows how props can be passed from a parent component to a child component
 //The app states what the old and new favourite colors and numbers are.
 
@@ -13,11 +10,11 @@ function App(props) {
   return(
     <div>
       <h2>Old favourites</h2>
-	  //Props are passed to <Display />. The syntax is very similar to HTML attributes.
+	  {/*Props are passed to <Display />. The syntax is very similar to HTML attributes.*/}
       <Display favColour="yellow" favNum={2} />
 	  
       <h2>New favourites</h2>
-	  //Props can be passed as variables, or directly as a string or number
+	  {/*Props can be passed as variables, or directly as a string or number*/}
       <Display favColour={newFavColor} favNum={newFavNum} />
     </div>
   )
@@ -27,7 +24,7 @@ function App(props) {
 function Display(props) {
   return (
     <div>
-	  //Props can be accessed with props.propName
+	  {/*Props can be accessed with props.propName*/}
       <p>My favourite colour is {props.favColour}</p>
       <p>My favourite number is {props.favNum}, it is an {props.favNum%2===0?"even":"odd"} number</p>
     </div>

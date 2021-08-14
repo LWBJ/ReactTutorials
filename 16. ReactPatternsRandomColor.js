@@ -1,15 +1,12 @@
-import React, { useState } from "https://cdn.skypack.dev/react"
-import ReactDOM from "https://cdn.skypack.dev/react-dom"
-
 //This code builds upon state and props. It reinforces the React pattern we have already been using.
 //The app is a random color generator. It generates a random color, then displays a <div> with that color.
 //It also renders a button that re-rolls the color.
 
 function App(props) {
   //Color depends on 3 values, one for red, green and blue. Hence, we need 3 state variables.
-  let [red, setRed] = useState(66)
-  let [green, setGreen] = useState(33)
-  let [blue, setBlue] = useState(99)
+  let [red, setRed] = React.useState(66)
+  let [green, setGreen] = React.useState(33)
+  let [blue, setBlue] = React.useState(99)
  
   //The event handler. It updates red, green and blue with a random value between 0 and 256.
   function handleClick() {
@@ -23,10 +20,10 @@ function App(props) {
     <div>
       <h1>Random Color App</h1>
 	  
-	  //<Display /> is passed the rgb values to render
+      {/*<Display /> is passed the rgb values to render*/}
       <Display r={red} g={green} b={blue} />
 	  
-	  //<Updater /> is passed the event handler to update the state
+	  {/*<Updater /> is passed the event handler to update the state*/}
       <Updater onClick={()=>handleClick()}/>
     </div>
   )
@@ -52,7 +49,7 @@ function Display(props) {
   //Finally, we return JSX
   return (
     <div>
-	  //This is the syntax for inline styles. The style attribute of the <div> is assigned the styleObject we defined
+	  {/*This is the syntax for inline styles. The style attribute of the <div> is assigned the styleObject we defined*/}
       <div style={styleObject}>
       </div>
       

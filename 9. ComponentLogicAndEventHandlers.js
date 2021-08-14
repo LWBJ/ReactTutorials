@@ -1,6 +1,3 @@
-import React from "https://cdn.skypack.dev/react"
-import ReactDOM from "https://cdn.skypack.dev/react-dom"
-
 //This code shows how functional components can apply logic and calculations before returning JSX
 
 //The app gets 2 random numbers and finds the average. It also renders a button that alerts the average.
@@ -19,11 +16,11 @@ function App(props) {
     <div>
       <p>Generate 2 random numbers</p> 
 	  
-	  //In the return statement, we can use variables defined elsewhere in the function component as per normal
+	  {/*In the return statement, we can use variables defined elsewhere in the function component as per normal*/}
       <p>The first number is {num1}, the second number is {num2}</p>
       <p>The average is {(num1+num2)/2}.</p>
       
-	  //This button uses the event handler we defined inside the component itself
+	  {/*This button uses the event handler we defined inside the component itself*/}
       <button onClick={alertAverage}>Alert the average</button>
     </div>
   )

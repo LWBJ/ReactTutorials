@@ -1,6 +1,3 @@
-import React from "https://cdn.skypack.dev/react"
-import ReactDOM from "https://cdn.skypack.dev/react-DOM"
-
 //This code renders Hello World. 
 //The function called is ReactDOM.render(), which has 2 arguments.
 //The first argument is the item to render, in this case it is <p>Hello World</p>

@@ -1,11 +1,8 @@
-import React, { useState } from "https://cdn.skypack.dev/react"
-import ReactDOM from "https://cdn.skypack.dev/react-dom"
-
 //This code shows the proper way to implement state changes that update based on the previous value. 
 //This app is the same counter app as before.
 
 function App(props) {
-  let [count, setCount] = useState(0)
+  let [count, setCount] = React.useState(0)
   
   //The event handler now calls setCount 3 times in a row. However, only one of the implementations achieve the desired results
   //Comment out the code and see what happens in each implementation

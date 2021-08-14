@@ -1,6 +1,3 @@
-import React, { useState } from "https://cdn.skypack.dev/react"
-import ReactDOM from "https://cdn.skypack.dev/react-dom"
-
 //This code shows how to update state in React using hooks
 //This app shows a count and a button. On pressing the button, the count increases.
 //Now we, look at how to update state using an event handler
@@ -8,7 +5,7 @@ import ReactDOM from "https://cdn.skypack.dev/react-dom"
 
 //<App /> is the parent. The event handler which updates the state is defined here.
 function App(props) {
-  let [count, setCount] = useState(0)
+  let [count, setCount] = React.useState(0)
   
   //This is the event handler. It simply calls setCount() to update state.
   //This function will be passed as an event handler to <Updater />
@@ -20,7 +17,7 @@ function App(props) {
     <div>
       <Display count={count}/>
 	  
-	  //Event handler is passed to <Updater /> as a prop
+	  {/*Event handler is passed to <Updater /> as a prop*/}
       <Updater onClick={()=>handleClick()}/>
     </div>
   )

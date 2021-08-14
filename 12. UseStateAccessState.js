@@ -1,17 +1,14 @@
-import React, { useState } from "https://cdn.skypack.dev/react"
-import ReactDOM from "https://cdn.skypack.dev/react-dom"
-
 //This code shows how to implement state in React using hooks
 //This app shows a count and a button. On pressing the button, the count increases. For now we work on the first half of the functionality
 
 //<App /> has count as a state variable, keeping track of the current count. It passes this data as a prop to <Display />
 function App(props) {
   //This is the destructuring syntax. The argument of useState is 0, hence the initial value of count is 0
-  let [count, setCount] = useState(0)
+  let [count, setCount] = React.useState(0)
   
   return (
     <div>
-	  //The value of the state is passed to <Display /> as a prop.
+	  {/*The value of the state is passed to <Display /> as a prop.*/}
       <Display count={count}/>
     </div>
   )

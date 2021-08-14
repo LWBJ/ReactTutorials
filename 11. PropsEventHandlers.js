@@ -1,6 +1,3 @@
-import React from "https://cdn.skypack.dev/react"
-import ReactDOM from "https://cdn.skypack.dev/react-dom"
-
 //This code shows how event handlers are passed as props
 //The app contains a button that alerts a message
 
@@ -24,7 +21,7 @@ function Child(props) {
     <div>
       <p>This button calls a function passed in as a prop.</p>
 	  
-	  //as before, the prop can be accessed with props.onClick
+	  {/*as before, the prop can be accessed with props.onClick*/}
       <button onClick={props.onClick}>Press Me!</button>
     </div>
   )

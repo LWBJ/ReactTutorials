@@ -1,9 +1,5 @@
-import React from "https://cdn.skypack.dev/react"
-import ReactDOM from "https://cdn.skypack.dev/react-dom"
-
 //This code shows how different components can be defined and nested inside each other
 //This app only renders text. However, the text is divided into different components
-
 
 //This is <App />, the parent component. It renders <Header /> and <Footer /> inside of it
 function App(props) {
